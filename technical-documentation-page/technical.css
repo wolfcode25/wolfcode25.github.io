@@ -1,0 +1,112 @@
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@600&display=swap');
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    
+    display: flex;
+}
+nav{
+    background-image: url(work.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: fixed;
+    height: 100vh;
+    width: 20vw;
+    border-right: 3px solid gray;  
+}
+@media (max-width: 809px){
+    #navbar{
+        display: none;
+        position: absolute;
+    }
+}
+nav > header  {
+    text-indent: 6px;
+    display: flex;
+    text-align: center;
+    align-items: center;
+    height: 12vh;
+}
+#navbar ul{
+    height: 78vh;
+    
+}
+#source{
+    padding: 5px;
+    font-size: 18px;
+    color: red;
+    background-color: black;
+}
+#navbar li{
+    border-top: 1px solid black;
+    list-style: none;
+    height: 15vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: large;
+    font-style: italic;
+    font-weight: bold;  
+}
+
+
+#navbar a{
+    text-decoration: none;
+    color: whitesmoke;
+}
+#navbar a:hover{
+    scale: 1.2;
+}
+#main-doc{
+    background-image: url(work1.jpg);
+    padding-top: 20px;
+}
+#back{
+    margin-left: 25vw;
+}
+@media (max-width: 809px){
+    #back{
+        margin-left: 5px;
+    }
+}
+main > div > section > header {
+    display: flex;
+    align-items: center;
+    color: rgb(187, 3, 3);
+    background-color: white;
+    width: max-content;
+}
+i{
+    font-size: 20px;
+    padding-left: 5px;
+}
+p{
+    text-align: justify;
+    padding: 20px 20px 20px 50px;
+    font-size: 25px;
+    line-height: 30px;
+    font-family: 'Dancing Script', cursive;
+    color: white;
+    
+}
+main > div > section > ul{
+    padding: 10px 0px 10px 110px;
+    
+    
+}
+main > div > section > ul > li{
+    font-weight: 20px;
+    color: khaki;
+    
+}
+main > div > section > ol{
+    padding: 10px 0px 10px 45px;
+    color: khaki;
+}
+h2{
+    color: whitesmoke;
+    padding: 10px 0px 10px 70px;
+}
