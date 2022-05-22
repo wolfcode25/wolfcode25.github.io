@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Street Workout</title>
+    <link rel="stylesheet" href="mystyle1.css" />
+  </head>
+  <body>
+    <header>
+      <h1 id="title">
+        Calisthenic<span class="s">S</span>treet<span> Workouts</span>
+      </h1>
+      <p id="description">What's your level<span class="q">?</span></p>
+    </header>
+    <main>
+      <form id="survey-form">
+        <div class="box0">
+          <label for="name" id="name-label">Name</label>
+          <input
+            id="name"
+            type="text"
+            name="name"
+            required
+            pattern="[A-Za-z]{1,30}"
+            placeholder="enter your name"
+          />
+          <label for="email" id="email-label">E-mail</label>
+          <input
+            id="email"
+            type="email"
+            name="email"
+            required
+            placeholder="abc...@xyz.com"
+          />
+          <label for="number" id="number-label">Age</label>
+          <input
+            id="number"
+            type="number"
+            name="age"
+            min="10"
+            max="99"
+            placeholder="how old are you?"
+          />
+        </div>
+        <div class="box1">
+          <label for="dl1">Gender</label>
+          <select required name="dl1" id="dropdown">
+            <option selected disabled>select an option</option>
+            <option value="female">Female</option>
+            <option value="male">Male</option>
+          </select>
+          <label for="dropdown">How many times do you workout per week?</label>
+          <select name="dl2" id="dropdown">
+            <option selected disabled>select an option</option>
+            <option value="one">once a week</option>
+            <option value="two-three">two to three times</option>
+            <option value="four-six">four to six times</option>
+          </select>
+        </div>
+        <label for="recom" class="lab"
+          >Would you recommend Calisthenics training to a friend?</label
+        >
+        <div class="box2">
+          <label class="container"
+            ><input type="radio" name="recom" id="recom" checked value="def" />
+            Definitely<span class="mark"></span></label
+          ><br />
+          <label class="container"
+            ><input type="radio" name="recom" id="recom" value="may" />
+            Maybe<span class="mark"></span></label
+          ><br />
+          <label class="container"
+            ><input type="radio" name="recom" id="recom" value="ns" /> Not
+            sure<span class="mark"></span></label
+          ><br />
+        </div>
+        <label for="ex" class="lab"
+          >What's your favourite Calisthenics exercices?</label
+        >
+        <div class="box3">
+          <label class="container"
+            ><input type="checkbox" name="fav" id="ex" value="pull" />
+            Pull-ups<span class="mark1"></span></label
+          ><br />
+          <label class="container"
+            ><input type="checkbox" name="fav" id="ex" value="push" />
+            Push-ups<span class="mark1"></span></label
+          ><br />
+          <label class="container"
+            ><input type="checkbox" name="fav" id="ex" value="core" />
+            L-sit<span class="mark1"></span></label
+          ><br />
+          <label class="container"
+            ><input type="checkbox" name="fav" id="ex" value="legs" />
+            Squat<span class="mark1"></span></label
+          ><br />
+          <label class="container"
+            ><input type="checkbox" name="fav" id="ex" value="heavy-push" />
+            Dips<span class="mark1"></span></label
+          ><br />
+          <label class="container"
+            ><input type="checkbox" name="fav" id="ex" value="shoulders" />
+            Handstand<span class="mark1"></span
+          ></label>
+        </div>
+        <div class="box4">
+          <label for="txt">Tell us more about yourself (optional)</label>
+          <textarea
+            name="infos"
+            id="txt"
+            cols="8"
+            rows="5"
+            placeholder="type your infos here..."
+          ></textarea>
+        </div>
+        <label class="box5">
+          <label for="submit"></label>
+          <button id="submit" type="submit">Submit</button>
+        </label>
+      </form>
+    </main>
+  </body>
+</html>

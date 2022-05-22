@@ -1,0 +1,206 @@
+body {
+  background-image: url("calis.jpg");
+  background-size: 100% 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+header {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-family: fantasy;
+  margin-top: 50px;
+}
+.s {
+  font-weight: bold;
+  color: red;
+}
+#title {
+  position: relative;
+  font-size: 3vw;
+  margin-bottom: 0px;
+}
+#description {
+  position: relative;
+  font-family: cursive;
+  font-size: 1.5vw;
+}
+.q {
+  color: red;
+  font-family: Arial;
+  font-weight: bold;
+}
+#survey-form {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-self: center;
+  background-color: rgba(63, 63, 63, 0.5);
+  border-radius: 10px;
+  color: whitesmoke;
+  width: 50vw;
+}
+input::placeholder,
+textarea::placeholder {
+  opacity: 4 !important;
+}
+input,
+select,
+textarea {
+  color: rgb(63, 63, 63);
+  opacity: 4;
+}
+.box0 {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  padding: 10px;
+  margin: 10px 20px 10px 20px;
+}
+.box0 input {
+  display: block;
+  position: relative;
+  margin-bottom: 20px;
+  box-sizing: border-box;
+  font-size: 100%;
+  font-family: fantasy;
+  padding: 10px;
+}
+
+.box0 label,
+.box1 label,
+.box4 label {
+  position: relative;
+  margin-bottom: 5px;
+  font-size: large;
+  font-family: fantasy;
+}
+.box1 {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  margin: -30px 20px -10px 20px;
+  padding: 10px;
+}
+.box1 select {
+  display: block;
+  position: relative;
+  box-sizing: border-box;
+  font-size: medium;
+  padding: 10px;
+  margin-bottom: 20px;
+}
+.lab {
+  position: relative;
+  padding: 10px;
+  margin: -10px 10px 10px 10px;
+  font-size: large;
+  font-family: fantasy;
+}
+.box2,
+.box3 {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  padding: 10px;
+  margin: -25px 20px 10px 20px;
+  width: max-content;
+}
+.box4,
+.box5 {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  padding: 10px;
+  margin: -10px 20px 10px 20px;
+}
+.box4 textarea {
+  display: block;
+  font-size: medium;
+  font-family: fantasy;
+  padding: 10px;
+}
+.box4 textarea:focus {
+  display: block;
+  position: relative;
+  outline: 2px solid rgb(141, 10, 10);
+  outline-style: groove;
+}
+#submit {
+  position: relative;
+  font-size: medium;
+  font-family: fantasy;
+  color: #eee;
+  background-color: rgb(141, 10, 10);
+  height: 40px;
+  margin-bottom: 20px;
+}
+
+.container {
+  display: block;
+  cursor: pointer;
+  position: relative;
+  margin-bottom: 5px;
+  padding-left: 35px;
+  font-size: large;
+  font-family: fantasy;
+}
+.container input {
+  position: absolute;
+  opacity: 0;
+}
+.mark {
+  position: absolute;
+  display: block;
+  top: -1px;
+  left: 0;
+  height: 17px;
+  width: 17px;
+  background-color: #eee;
+  border-radius: 50%;
+  border: 2px solid rgb(63, 63, 63);
+}
+.container input:checked ~ .mark {
+  border-color: rgb(141, 10, 10);
+}
+.mark::after,
+.mark1::after {
+  content: "";
+  position: absolute;
+  display: none;
+}
+.container input:checked ~ .mark::after,
+.container input:checked ~ .mark1::after {
+  display: block;
+}
+.mark::after {
+  top: 2px;
+  left: 2px;
+  height: 13px;
+  width: 13px;
+  background-color: rgb(141, 10, 10);
+  border-radius: 50%;
+}
+.mark1 {
+  display: block;
+  position: absolute;
+  height: 17px;
+  width: 17px;
+  top: 0;
+  left: 2px;
+  background-color: #eee;
+}
+.container input:checked ~ .mark1 {
+  background-color: rgb(141, 10, 10);
+}
+.mark1::after {
+  top: 0px;
+  left: 4.5px;
+  height: 10px;
+  width: 4px;
+  border: solid #eee;
+  border-width: 0px 3px 3px 0px;
+  transform: rotate(40deg);
+}
