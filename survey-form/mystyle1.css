@@ -1,10 +1,17 @@
-body {
+html {
   background-image: url("calis.jpg");
-  background-size: 100% 100%;
+  background-size: 100vw 100%;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+body {
+
   display: flex;
   flex-direction: column;
   align-items: center;
 }
+
 header {
   position: relative;
   display: flex;
@@ -13,25 +20,30 @@ header {
   font-family: fantasy;
   margin-top: 50px;
 }
+
 .s {
   font-weight: bold;
   color: red;
 }
+
 #title {
   position: relative;
-  font-size: 3vw;
+  font-size: x-large;
   margin-bottom: 0px;
 }
+
 #description {
   position: relative;
   font-family: cursive;
-  font-size: 1.5vw;
+  font-size: large;
 }
+
 .q {
   color: red;
   font-family: Arial;
   font-weight: bold;
 }
+
 #survey-form {
   position: relative;
   display: flex;
@@ -42,16 +54,19 @@ header {
   color: whitesmoke;
   width: 50vw;
 }
+
 input::placeholder,
 textarea::placeholder {
   opacity: 4 !important;
 }
+
 input,
 select,
 textarea {
   color: rgb(63, 63, 63);
   opacity: 4;
 }
+
 .box0 {
   position: relative;
   display: flex;
@@ -59,6 +74,7 @@ textarea {
   padding: 10px;
   margin: 10px 20px 10px 20px;
 }
+
 .box0 input {
   display: block;
   position: relative;
@@ -77,6 +93,7 @@ textarea {
   font-size: large;
   font-family: fantasy;
 }
+
 .box1 {
   position: relative;
   display: flex;
@@ -84,6 +101,7 @@ textarea {
   margin: -30px 20px -10px 20px;
   padding: 10px;
 }
+
 .box1 select {
   display: block;
   position: relative;
@@ -92,6 +110,7 @@ textarea {
   padding: 10px;
   margin-bottom: 20px;
 }
+
 .lab {
   position: relative;
   padding: 10px;
@@ -99,6 +118,7 @@ textarea {
   font-size: large;
   font-family: fantasy;
 }
+
 .box2,
 .box3 {
   position: relative;
@@ -108,6 +128,7 @@ textarea {
   margin: -25px 20px 10px 20px;
   width: max-content;
 }
+
 .box4,
 .box5 {
   position: relative;
@@ -116,18 +137,21 @@ textarea {
   padding: 10px;
   margin: -10px 20px 10px 20px;
 }
+
 .box4 textarea {
   display: block;
   font-size: medium;
   font-family: fantasy;
   padding: 10px;
 }
+
 .box4 textarea:focus {
   display: block;
   position: relative;
   outline: 2px solid rgb(141, 10, 10);
   outline-style: groove;
 }
+
 #submit {
   position: relative;
   font-size: medium;
@@ -147,10 +171,12 @@ textarea {
   font-size: large;
   font-family: fantasy;
 }
+
 .container input {
   position: absolute;
   opacity: 0;
 }
+
 .mark {
   position: absolute;
   display: block;
@@ -162,19 +188,23 @@ textarea {
   border-radius: 50%;
   border: 2px solid rgb(63, 63, 63);
 }
-.container input:checked ~ .mark {
+
+.container input:checked~.mark {
   border-color: rgb(141, 10, 10);
 }
+
 .mark::after,
 .mark1::after {
   content: "";
   position: absolute;
   display: none;
 }
-.container input:checked ~ .mark::after,
-.container input:checked ~ .mark1::after {
+
+.container input:checked~.mark::after,
+.container input:checked~.mark1::after {
   display: block;
 }
+
 .mark::after {
   top: 2px;
   left: 2px;
@@ -183,6 +213,7 @@ textarea {
   background-color: rgb(141, 10, 10);
   border-radius: 50%;
 }
+
 .mark1 {
   display: block;
   position: absolute;
@@ -192,9 +223,11 @@ textarea {
   left: 2px;
   background-color: #eee;
 }
-.container input:checked ~ .mark1 {
+
+.container input:checked~.mark1 {
   background-color: rgb(141, 10, 10);
 }
+
 .mark1::after {
   top: 0px;
   left: 4.5px;
